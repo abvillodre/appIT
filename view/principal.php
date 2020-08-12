@@ -32,7 +32,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <div class="form-group row">
                     <label for="lnombre" class="col-sm-1 col-form-label">Nombre:</label>
                     <div class="col-sm-5">
-                        <input type="text" class="form-control" name="nombre" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð]{2,50}" maxlength="50" autofocus required>
+                        <input type="text" class="form-control" name="nombre" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ]{2,50}" maxlength="50" autofocus required>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -58,7 +58,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     <label for="lcp" class="col-sm-1 col-form-label">CP:</label>
                     <div class="col-sm-3">
 
-                        <input type="number" class="form-control" placeholder="código postal" maxlength="5" name="cp">
+                        <input type="number" class="form-control" placeholder="código postal" max="99999" name="cp">
                     </div>
                 </div>
                 <div class="form-group row">
