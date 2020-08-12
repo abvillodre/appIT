@@ -1,5 +1,4 @@
 <?php
-
 // Incluimos el archivo de configuracion de bd
 require_once "../config/config.php";
 
@@ -31,11 +30,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (mysqli_stmt_execute($stmt)) {
             // si es ok, redirigimos a la pag principal
             ?>
-            <script>
-                alert('Mi primer Script');
+            <script type="text/javascript">
+               alert("Tarea guardada correctamente");
             </script>
             <?php
-
             header("location: ../view/principal.php");
         } else {
             echo "Algo salió mal, por favor inténtalo de nuevo.";
