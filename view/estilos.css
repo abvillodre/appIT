@@ -1,0 +1,19 @@
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body {
+    margin: 25px !important;
+    font: 14px sans-serif !important;
+    background-color: #BAE9F0 !important;
+}
+
+table, th, td {
+    border: 1px solid black !important;
+}
+
+table{
+    background-color: white !important;
+
+}
